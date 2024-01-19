@@ -1,0 +1,13 @@
+<div class="container mt-3 from-group">
+    <label class="form-label">Category</label>
+<select class="form-control w-25" [(ngModel)]="selectedCategory">
+<option value="RawMaterial">RawMaterial</option>
+<option value="ProcessMaterial">ProcessMaterial</option>
+<option value="FinishMaterial">FinishMaterial</option>
+</select>
+<label class="form-label">Name:</label>
+<input type="text" class="form-control w-25" [(ngModel)]="ItemName" id="ItemName"/>
+<label class="form-label">Quantity</label>
+<input type="number" class="form-control w-25" [(ngModel)]="quantity" id="quantity"/>
+<button class="btn btn-primary mt-3" (click)="addItem()">Add</button>
+</div>
